@@ -1,7 +1,19 @@
-h1 {
-  color: purple;
-  font-size: 200%;
+h1{
+color: purple;
+font-size: 200%;
+}
+p {
+  font-family: "comic sans";
+  text-indent: 20px;
+  margin-left: 10px;
+  font-size: 15px;
 }
 #content {
-  background color: #A7A7AF
+    background-color: #cccccc;
+    width: 500px;
+    min-height: 300px;
+    padding: 10px;
+    margin: 10px;
+    border: solid 1px #444444;
+    font-size: 15px;
 }
