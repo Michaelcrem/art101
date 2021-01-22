@@ -5,3 +5,12 @@ nav,a{
 nav,li{
   color:Black
 }
+body {
+  margin:10px;
+  background-color: white;
+}
+#content, #menu {
+  padding: 20px;
+  border: 1px solid Black;
+
+}
