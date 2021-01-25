@@ -18,7 +18,9 @@ body {
 
 }
 img {
-  width: 300px;
-    padding: 20px;
-    border: 5px solid green;
+  position: relative;
+    left: 350px;
+    width: 300px;
+      padding: 20px;
+      border: 5px solid green;
 }
