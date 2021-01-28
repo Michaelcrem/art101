@@ -1,11 +1,12 @@
 img{
   position: fixed;
-      left: 1000px;
+      left: 974px;
       width: 259px;
       padding: 20px
 }
 #script {
   position: fixed;
+  margin:-32px;
       left: 805px;
       width: 455px;
       padding: 20px;
