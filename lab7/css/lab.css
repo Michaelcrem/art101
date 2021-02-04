@@ -1,0 +1,16 @@
+.namebadge {
+    float: right;
+    width: 500px;
+}
+img {
+  position: relative;
+  left: -45px;
+  bottom: 83px;
+  width: 516px;
+  padding: 20px;
+}
+.name {
+    position: absolute;
+    left: 1035px;
+    font-size: 53px;
+}
