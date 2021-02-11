@@ -1,53 +1,65 @@
-/*
- * Author: Wes Modes <wmodes@csumb.edu>
- * Created: 19 September
- * License: Public Domain
- */
-
-window.onload=function(){
-
-  outputEl = document.getElementById("output");
+// author:
+//date: 2021/02/9
+//License: MIT (for everyone) copywritten by (for myself)
 
 
-  function firstThing(test) {
-      console.log(test + ": This is the first thing.");
-      outputEl.innerHTML += test + ": This is the first thing.<br>";
-  }
+//create a div element that has id="div_1" and text that says "this is annoying"
+var new1El = document.getElementById("output");
+new1El.innerHTML = "Want know how many challenges we had?";
 
-  function secondThing(test) {
-      console.log(test + ": This is the second thing.<br>");
-      outputEl.innerHTML += test + ": This is the second thing.<br>"
-  }
 
-  function thirdThing(test) {
-      console.log(test + ": This is the third thing.<br>");
-      outputEl.innerHTML += test + ": This is the third thing.<br>";
-  }
+//console.log that text
+console.log(new1El.innerHTML);
 
-  firstThing("TEST 1");
-  secondThing("TEST 1");
-  thirdThing("TEST 1");
+//add a button
+var new2El = document.createElement("button");
+document.body.appendChild(new2El); //keeps the button from disappearing
+new2El.innerHTML = "Challenges";
 
-  // test 2 - in order
-  setTimeout(function() {
-      firstThing("TEST 2");
-  }, 0);
-  setTimeout(function() {
-      secondThing("TEST 2");
-  }, 0);
-  setTimeout(function() {
-      thirdThing("TEST 2");
-  }, 0);
+//change the text from this annoying into "this is more annoying than I thought!" when Clicking the button
+new2El.onclick = function (){
+        new1El.innerHTML = "NONE!... Just kidding, we did have some. We were having a hard time tyring to add in more buttons in our javascript since it was not connecting to our HTML. We found our error by looking over our code and fixing our new numbered variables. After that, we didn't have any challenges and it was straight forward. We both attended section the previous week which helped us a lot for this lab."
 
-  // test 3 - order is 2, 3, 1.
-  setTimeout(function() {
-      firstThing("TEST 3");
-  }, 3000);
-  setTimeout(function() {
-      secondThing("TEST 3");
-  }, 1000);
-  setTimeout(function() {
-      thirdThing("TEST 3");
-  }, 2000);
+}
 
-} // ready
+
+
+
+//create a div element that has id="div_1" and text that says "this is annoying"
+var new3El = document.getElementById("content");
+new3El.innerHTML = "Don't press the button";
+
+
+//console.log that text
+console.log(new3El.innerHTML);
+
+//add a button
+var new4El = document.createElement("button");
+document.body.appendChild(new4El); //keeps the button from disappearing
+new4El.innerHTML = "Problems";
+
+//change the text from this annoying into "this is more annoying than I thought!" when Clicking the button
+new4El.onclick = function (){
+        new3El.innerHTML = "I got 99 Problems, but JavaScript isn't one..... We are curious as to how to keep the buttons clickable without refreshing the page. We tried to exlpore this little problem in depth but we were happy with our initial result."
+
+}
+
+
+//create a div element that has id="div_1" and text that says "this is annoying"
+var new5El = document.getElementById("content2");
+new5El.innerHTML = "DONT PRESS THE THIRD BUTTON!";
+
+
+//console.log that text
+console.log(new5El.innerHTML);
+
+//add a button
+var new6El = document.createElement("button");
+document.body.appendChild(new6El); //keeps the button from disappearing
+new6El.innerHTML = "Results";
+
+//change the text from this annoying into "this is more annoying than I thought!" when Clicking the button
+new6El.onclick = function (){
+        new5El.innerHTML = "Here we have our results. We made three new elements that allow us to click for more information. We created buttons in our javascript by using createElement and we connected our new elements in our HTML with our three different divs. By clicking on our buttons, you are able to see our information in our Results, Problems and Challenges Section!  ";
+
+}
