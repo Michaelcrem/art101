@@ -4,9 +4,11 @@
 // License: Public Domain
 
 
-
+//This create the button under the challenges
 $("#challenges").append("<button id='c-button'>Button</button>");
+//This creates the button under problems
 $("#problems").append("<button id='p-button'>Button</button>");
+//This creates the button under results
 $("#results").append("<button id='r-button'>Button</button>");
 
 // what the button do when clicked
