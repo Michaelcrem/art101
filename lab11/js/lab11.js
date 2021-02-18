@@ -28,3 +28,11 @@ $("#results-button").click(function(){
   alert("Ok fine, don't do anything. I just stole all your info!!!");
 })
 //sends ann alert message after clicking on the results button
+
+$(document).ready(function(){
+    $("p").on({
+        mouseenter: function(){
+            $(this).css("color", "green");
+        }
+    });
+});
