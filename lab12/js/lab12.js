@@ -1,6 +1,6 @@
 /*
- * Author: Wes Modes <wmodes@csumb.edu>
- * Created: 3 October
+ * Author: Michael Cremonini <mcremoni@ucsc.edu>
+ * Created: 22 February
  * License: Public Domain
  */
 
