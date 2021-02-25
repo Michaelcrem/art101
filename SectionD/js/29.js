@@ -1,16 +1,34 @@
-//author: Michael Cremonini
-//create a div element that has id="div_1" and text that says "this is annoying"
-//console.log that text
-//add a button
-//change the text from this is annoying into " this is more annoying than I thought!" when Clicking the button
+var original_text = $("#original_text").children().html();
+console.log(original_text);
 
-var divEl = document.getElementById("div_1");
-divEl.innerHTML = "This is annoying";
-console.log(divEl.innerHTML);
-var buttonEl = document.createElement("button");
-document.body.appendChild(buttonEl);
-buttonEl.innerHTML= "press me!";
 
-buttonEl.onclick=function(){
-  divEl.innerHTML="this is more annoying than I thought";
+function macthingFunction(){
+var input_text = $("input_text").val();
+var substring_var = original_text.substring(0,input_text.length)
+console.log(input_text);
+console.log(substring_var);
+if(input_text==substing_var){
+
+  $("#input_text").css('border-color','green');
+
 }
+
+else {
+$("#input_text").css('border-color','blue');
+
+
+}
+
+}
+else {
+$("#input_text").css('border-color','red');
+
+
+}
+
+
+
+}
+
+
+$("#input_text").keyup(matchingFunction);
