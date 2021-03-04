@@ -1,34 +1,23 @@
-var original_text = $("#original_text").children().html();
-console.log(original_text);
+function getajaxdata(){
 
 
-function macthingFunction(){
-var input_text = $("input_text").val();
-var substring_var = original_text.substring(0,input_text.length)
-console.log(input_text);
-console.log(substring_var);
-if(input_text==substing_var){
+$.ajax({
+  url:"data/data.txt",
+  type:"GET",
+  datatype:"text",
+  success: successFun,
+  error: errorFun,
+  complete: function(xhr,status){
+    console.log("the request has been done");
+  }
 
-  $("#input_text").css('border-color','green');
-
+})
+function successFun(result){
+console.log(result)
+  $('#ajax_text').html(result);
 }
-
-else {
-$("#input_text").css('border-color','blue');
-
-
+function errorFun(xhr,status,strErr){
+  console.log("error"+strErr);
 }
-
 }
-else {
-$("#input_text").css('border-color','red');
-
-
-}
-
-
-
-}
-
-
-$("#input_text").keyup(matchingFunction);
+$('#ajax_get').click(getajaxdata)
